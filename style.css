@@ -29,3 +29,24 @@ body {
     height: auto;
     display: block;
 }
+.fish { 
+    animation: fishFloat 5s ease-in-out infinite;
+}
+.fish-hover {
+    transition: transform 1.2s ease;
+        
+}
+.fish-hover:hover {
+    transform:  rotate(2deg) scale(1.03);
+}
+@keyframes fishFloat {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-6px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
